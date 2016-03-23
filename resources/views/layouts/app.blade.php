@@ -15,8 +15,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
-    <link rel="stylesheet" href="/bootstrap-calendar/dist/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/bootstrap-calendar/dist/css/bootstrap-calendar.min.css">
     <style>
         body {
             font-family: 'Lato';
@@ -79,11 +77,6 @@
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <script src="/bootstrap-calendar/dist/js/underscore.min.js"></script>
-<script src="/bootstrap-calendar/dist/js/backbone.min.js"></script>
-<!-- bootstrap-calendar core library: -->
-<script src="/bootstrap-calendar/dist/js/bootstrap-calendar.min.js"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>
