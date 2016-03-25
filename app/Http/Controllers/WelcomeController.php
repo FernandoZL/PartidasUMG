@@ -10,6 +10,6 @@ class WelcomeController extends Controller
 {
     public function welcome()
     {
-        return (Auth->User()->email());
+        return view('welcome');
 	}
 }
