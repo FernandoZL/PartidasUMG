@@ -8,7 +8,11 @@
                 <div class="panel-heading">Bienvenido</div>
 
                 <div class="panel-body">
-                    <a href="{{ url('/login') }}">Inicia sesión</a> para acceder a la aplicación.
+                   @if (DB::table('users')->get() != null )
+                            <a href="{{ url('/login') }}">Inicia sesión</a>
+                        @else
+                            <a href="{{ url('/register') }}">Registrate</a>
+                        @endif  para acceder a la página.
                 </div>
             </div>
         </div>

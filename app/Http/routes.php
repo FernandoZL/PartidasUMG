@@ -11,10 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'WelcomeController@welcome');
+/*return Redirect::to('home');
+Route::filter('old', function()
+{
+    if (Input::get('age') < 200)
+    {
+        return Redirect::to('home');
+    }
 });
-
+*/
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -28,6 +34,12 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
     //
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route:: auth();
+
+    Route::get('/home', 'HomeController@index');
 });
 
 Route::group(['middleware' => 'web'], function () {
